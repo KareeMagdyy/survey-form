@@ -52,7 +52,7 @@ body {
 
 /* Form Start  */
 .form-contain {
-  width: 50vw;
+  width: 55vw;
   margin: 2rem auto;
   background: #272746;
   border-radius: 8px;
@@ -120,6 +120,73 @@ input[type="radio"] {
   border: none;
   border-radius: 5px;
   margin-bottom: 2rem;
+  cursor: pointer;
 }
 
-/* fomr end */
+.form-group button:hover,
+.form-group button:focus {
+  color: #242445;
+  font-weight: 700;
+}
+
+/* form end */
+/* Start Footer */
+footer {
+  width: 90vw;
+  border-top: 1px #242445 dashed;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links {
+  margin-top: 0.7rem;
+}
+
+.social-links a {
+  font-size: 1.5rem;
+  color: #242445;
+  margin-left: 2rem;
+}
+
+.copy-r p {
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  font-family: "Poppins", sans-serif;
+  color: #242445;
+}
+
+/* End Footer */
+
+/* Mobile */
+@media (max-width: 576px) {
+  .header h1 {
+    font-size: 1.3rem;
+  }
+
+  .header p {
+    font-size: 0.7rem;
+    text-align: center;
+  }
+
+  .form-contain {
+    width: 85vw;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .copy-r p {
+    margin-left: 3rem;
+  }
+}
+/* Mobile End */
+
+@media (max-width: 992px) {
+  .form-contain {
+    width: 70vw;
+  }
+}
